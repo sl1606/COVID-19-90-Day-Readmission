@@ -115,8 +115,8 @@ def load_data(data_path, continuous_imputer_path, discrete_encoder_path, continu
         mode="train",
     )
 
-    X = data[DISCRETE_COLUMNS + CONTINUOUS_COLUMNS].values.tolist()  # 获取特征
-    y = data[TARGET_COLUMN].apply(lambda x: TARGETS.index(x)).values.tolist()  # 获取标签
+    X = data[DISCRETE_COLUMNS + CONTINUOUS_COLUMNS].values.tolist()  
+    y = data[TARGET_COLUMN].apply(lambda x: TARGETS.index(x)).values.tolist()  
 
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
@@ -216,7 +216,7 @@ def bayes_optimization(
         # test_score = -accuracy_score(y_test, model.predict(X_test)) 
         y_test_pred_score = model.predict_proba(X_test)[:, 1] 
         fpr, tpr, thresholds = roc_curve(y_test, y_test_pred_score) 
-        test_score = -auc(fpr, tpr)  # 计算AUC
+        test_score = -auc(fpr, tpr)  
 
         return test_score
 

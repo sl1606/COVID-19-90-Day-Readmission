@@ -207,7 +207,7 @@ def bayes_optimization(
 
     @use_named_args(spaces)
     def objective(**kwargs):
-        print("参数详情:", kwargs)
+        print("Parameters:", kwargs)
         model = RandomForestClassifier(n_jobs=-1, random_state=42)  
         model.set_params(**kwargs)  
         model.fit(X_train, y_train)

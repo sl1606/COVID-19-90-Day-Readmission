@@ -6,5 +6,6 @@ The coronavirus disease 2019 (COVID-19) outbreak has posed unprecedented challen
 ## Cite Our Work
 Lin, S., Tao, S., Huang, Y., Li, X., & Zhang, G. Q. (2024). Identifying Factors Associated with COVID-19
 All-Cause 90-Day Readmission: Machine Learning Approaches. Artificial Intelligence in Medicine (pp. 76–80).
+
 https://link.springer.com/chapter/10.1007/978-3-031-66538-7_9
 
